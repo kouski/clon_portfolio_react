@@ -13,7 +13,7 @@ export default function Proyectos() {
           {/* Enlace que envuelve toda la tarjeta */}
           <a href="https://calm-meringue-93fa32.netlify.app/castellano.html" target="_blank" className="link-proyecto">
             {/* Contenido de la tarjeta */}
-            <img src="./images/valluatravel.png" class="card-img-top img-fluid"
+            <img src="/src/images/valluatravel.png" class="card-img-top img-fluid"
               alt="Imagen de formulario con una imagen de ebook de cocina."/>
 
             <div className="card-body">
@@ -29,7 +29,7 @@ export default function Proyectos() {
           {/* Enlace que envuelve toda la tarjeta */}
           <a href="https://proyectonaturquinoa.netlify.app/" target="_blank" className="link-proyecto">
             {/* Contenido de la tarjeta */}
-            <img src="./images/Web_naturquinoa.webp" className="card-img-top img-fluid"
+            <img src="/src/images/Web_naturquinoa.webp" className="card-img-top img-fluid"
               alt="Imagen de formulario con una imagen de ebook de cocina."/>
 
             <div className="card-body">
@@ -46,7 +46,7 @@ export default function Proyectos() {
           {/* Enlace que envuelve toda la tarjeta */}
           <a href="https://www.saludyeducacionintegrales.org/" target="_blank" className="link-proyecto">
             {/* Contenido de la tarjeta */}
-            <img src="./images/fundacion.png" className="card-img-top img-fluid"
+            <img src="/src/images/fundacion.png" className="card-img-top img-fluid"
               alt="Imagen de formulario con una imagen de ebook de cocina."/>
 
             <div className="card-body">
@@ -62,7 +62,7 @@ export default function Proyectos() {
 
         <article className="card h-100">
           <a href="https://gamarrawebdesign.com" target="_blank" className="link-proyecto">
-            <img src="./images/Gamarraweb.png" className="card-img-top img-fluid"
+            <img src="/src/images/Gamarraweb.png" className="card-img-top img-fluid"
               alt="Imagen de formulario con una imagen de ebook de cocina"/>
 
             <div className="card-body">
@@ -76,7 +76,7 @@ export default function Proyectos() {
 
         <article className="card h-100">
           <a href="https://molinodelahoz.netlify.app/" target="_blank" className="link-proyecto">
-            <img src="./images/molino_web.webp"
+            <img src="/src/images/molino_web.webp"
               className="card-img-top img-fluid" alt="Imagen de formulario con una imagen de ebook de cocina"/>
 
           <div className="card-body">
@@ -90,7 +90,7 @@ export default function Proyectos() {
 
         <article className="card h-100">
           <a href="https://veterinariareact71.netlify.app/" target="_blank" className="link-proyecto">
-            <img src="./images/veterinaria.webp"
+            <img src="/src/images/veterinaria.webp"
               className="card-img-top img-fluid" alt="Imagen de formulario con una imagen de ebook de cocina"/>
 
           <div className="card-body">
@@ -105,7 +105,7 @@ export default function Proyectos() {
 
         <article className="card h-100">
           <a href="https://cardgame71.netlify.app/" target="_blank" className="link-proyecto">
-            <img src="./images/juego_cartas.webp"
+            <img src="/src/images/juego_cartas.webp"
               className="card-img-top img-fluid" alt="Imagen negra y dorada de juego de cartas"/>
 
           <div className="card-body">
@@ -119,8 +119,8 @@ export default function Proyectos() {
       <div className="col">
 
         <article className="card h-100">
-          <a href="bricolaje.pdf" target="_blank" className="link-proyecto">
-            <img src="./images/herramientas-de-bricolaje-848x477x80xX.webp"
+          <a href="/bricolaje.pdf" target="_blank" className="link-proyecto">
+            <img src="/src/images/herramientas-de-bricolaje-848x477x80xX.webp"
               className="card-img-top img-fluid" alt="Foto herramientas bricolaje"/>
 
           <div className="card-body">
@@ -132,8 +132,8 @@ export default function Proyectos() {
       </div>
       <div className="col">
       <article className="card h-100">
-          <a href="comidasana.pdf" target="_blank" className="link-proyecto">
-            <img src="./images/comida_sana.webp" className="card-img-top img-fluid"
+          <a href="/comidasana.pdf" target="_blank" className="link-proyecto">
+            <img src="/src/images/comida_sana.webp" className="card-img-top img-fluid"
               alt="foto pechuga de pollo con ensalada"/>
 
           <div className="card-body">
@@ -146,8 +146,8 @@ export default function Proyectos() {
       </div>
       <div className="col">
         <article className="card h-100">
-          <a href="appcine.pdf" target="_blank" className="link-proyecto">
-            <img id="cine" src="./images/cine.webp" className="card-img-top img-fluid"
+          <a href="/appcine.pdf" target="_blank" className="link-proyecto">
+            <img id="cine" src="/src/images/cine.webp" className="card-img-top img-fluid"
               alt="cine y palomitas"/>
 
           <div className="card-body">
