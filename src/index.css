@@ -1,68 +1,438 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+/* Box sizing */
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: 'Zen Kurenaido', sans-serif;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+/* Reset margins */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+picture {
+    margin: 0;
 }
-a:hover {
-  color: #535bf2;
-}
+/* set up the body */
 
 body {
-  margin: 0;
+    line-height: 1.5;
+    min-height: 100vh;
+}
+
+/* make images easier to work with */
+
+img,
+picture {
+    display: block;
+    max-width: 100%;
+}
+
+/* make forms easier to work with */
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* remove animations for people who´ve turned them off */
+@media(prefers-reduced-motion: reduce){
+*,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+    }
+}
+
+h2{
+    /* font-size: 3vw; */
+    color: rgb(207, 11, 11);
+    padding-top: 20px;
+    text-align: center;
+    text-shadow: 1px 1px black;
+}
+
+h1{
+    /* font-size: 4vw; */
+    color: rgb(207, 11, 11);
+    margin-top: 80px;
+    padding: 0px;
+    text-align: center;
+    text-shadow: 1px 1px black;
+    text-transform: capitalize;
+}
+
+h3 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+p{
+    font-size: 1.2rem;
+    line-height: 1.5;
+    padding: 30px;
+    text-align: justify;
+}
+
+
+
+/* Navbar */
+
+.navbar-brand {
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/* .navbar a:hover {
+    
+    background-color: black;
+    border-radius: 20px;
+    
+} */
+
+.navbar-brand img{
+    height: 90px;
+    margin-top: 20px;
+    width: 90px;
+}
+
+
+.navbar li a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 20px;
+}
+.navbar li a:hover { 
+    color: red !important;
+    font-weight: bold; 
+}
+
+
+#cv {
+    background-color: #FF0000;
+    border-radius: 25px;
+    border: 2px solid black;
+    color: #f2f5f5;
+    font-size: 1.2rem;
+    font-weight: bold;
+    opacity: .6;
+}
+
+#cv:hover {
+    background-color: black;
+    border: 2px solid red;
+    color: whitesmoke;
+    opacity: .6;
+}
+
+
+#hero {
+    background-image: url(./images/pexels-christina-morillo-1181343.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about {
+    font-size: 2vw;
+}
+
+.accordion-button[aria-expanded="true"] {
+    background-color: rgb(207, 11, 11);
+    box-shadow: none;
+    color: whitesmoke;
+  }
+.accordion-button[aria-expanded="false"] {
+    box-shadow: none;
+  }
+
+.card-acerca {
+    border-radius: 10px;
+    border: 0;
+    box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18);
+    margin-bottom: 1.5em;
+}
+
+label {
+    font-size: 1.2rem;
+}
+/* Button */
+
+.docs{
+  font-size: 1.4rem;
+}
+
+
+.download-button {
+  border-radius: 4px;
+  border-width: 0;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  position: relative;
+  z-index: 1;
+ }
+ 
+ .download-button .docs {
+  align-items: center;
+  background-color: #242a35;
+  border-radius: 4px;
+  border: solid 1px #e8e8e82d;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  gap: 10px;
+  justify-content: space-between;
+  min-height: 40px;
+  padding: 0 10px;
+  transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);
+  z-index: 1;
+ }
+ 
+ .download-button:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+ }
+ 
+ .download {
+  align-items: center;
+  background-color: #e00101;
+  border-radius: 4px;
+  border: solid 1px #f55a5a2d;
+  display: flex;
+  inset: 0;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 90%;
+  position: absolute;
+  transform: translateY(0%);
+  transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);
+  z-index: -1;
+ }
+ 
+ .download-button:hover .download {
+  transform: translateY(100%)
+ }
+ 
+ .download svg polyline,.download svg line {
+  animation: docs 1s infinite;
+ }
+
+
+ 
+ @keyframes docs {
+  0% {
+   transform: translateY(0%);
+  }
+ 
+  50% {
+   transform: translateY(-15%);
+  }
+ 
+  100% {
+   transform: translateY(0%);
+  }
+ }
+
+
+/* Footer */
+
+footer{
+    display: flex;
+    flex-direction: column;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.logo_list {
+    margin: auto;
+    max-width: 500px;
+    padding-right: 60px;
+    
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+#contact {
+    margin: auto;
+    padding-bottom: 30px;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+#email{
+    height: 30px;
+    width: 30px;
+    
+
 }
+
+.habilidades{
+    background: rgba(250, 247, 247, 0.683);
+}
+
+.skills{
+    height: 300px;
+    width: 700px;
+    
+    
+}
+
+/* Progress circles */
+
+
+
+/* Media queries */
+
+/* If the screen size is 771px wide or more */
+@media screen and (min-width: 771px) {
+    h1 {
+      font-size: 50px;
+    }
+    h2 {
+      font-size: 40px;
+    }
+    p {
+      font-size: 30px;
+    }
+  }
+  
+  /* If the screen size is 770px wide or less */
+  @media screen and (max-width: 770px) {
+    h1{
+      font-size: 30px;
+    }
+    h2{
+      font-size: 24px;
+    }
+    p{
+      font-size: 18px;
+    }
+  }
+
+
+  /* Project cards */
+
+  .card {
+    transition: transform 0.6s ease;
+    box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18);
+    border-radius: 0;
+    border: 0;
+    margin-bottom: 1.5em;
+    filter: opacity(.5);
+  }
+  .card:hover {
+    transform: scale(1.1);
+    filter: opacity(1);
+    cursor: pointer;
+  }
+
+  /* Contact form */
+
+  .form-control:focus {
+    border-color: #FF0000;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
+  }
+
+  #enviar:hover {
+      background: black;
+      border: 2px solid #FF0000;
+  }
+
+  
+  /* relevant styles */
+.img__wrap {
+    position: relative;
+    height: 300px;
+    width: 300px;
+  }
+  
+  .img__description_layer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(249, 49, 84, 0.34);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0.4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  
+    /* transition effect. not necessary */
+    transition: opacity .2s, visibility .2s;
+  }
+  
+  .img__wrap:hover .img__description_layer {
+    visibility: visible;
+    opacity: 1;
+    cursor: pointer;
+  }
+  
+  .img__description {
+    transition: .2s;
+    transform: translateY(1em);
+  }
+  
+  .img__wrap:hover .img__description {
+    transform: translateY(0);
+  }
+
+  /* Ultima imagen */
+
+  .container-text {
+    position: relative;
+    width: 100%;
+  }
+  
+  .image {
+    display: block;
+    width: 300px;
+    height: 300px;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 300px;
+    width: 300px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+  }
+  
+  .container-text:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .link-proyecto{
+    text-decoration: none;
+    color: #242a35;
+  }
+
+  .link-proyecto:hover{
+    color: #242a35;
+  }
