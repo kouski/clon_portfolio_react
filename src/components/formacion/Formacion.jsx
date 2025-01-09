@@ -1,4 +1,17 @@
+import { useEffect } from "react";
+
 export default function Formacion() {
+
+    useEffect(() => {
+        // Selecciona los elementos del acordeón y los inicializa
+        const accordionElements = document.querySelectorAll('[data-bs-toggle="collapse"]');
+        accordionElements.forEach((accordionTriggerEl) => {
+          new bootstrap.Collapse(accordionTriggerEl, {
+            toggle: false, // No lo abra automáticamente
+          });
+        });
+      }, []);
+
     return (
       <>
         <div className="container-fluid">
@@ -55,7 +68,7 @@ export default function Formacion() {
                     aria-labelledby="flush-headingTwo"
                     data-bs-parent="#accordionFlushExample"
                   >
-                    <div className="accordion-body" style={{ fontSize: '1.25rem' }}>
+                    <div className="accordion-body" style={{ fontSize: '1.25rem'}}>
                       <ul>
                         <li>Certificado en JavaScript (JSE 40-01)</li>
                         <li>Certificado profesional de Diseño de Experiencia del Usuario (UX) de Google</li>
@@ -105,7 +118,7 @@ export default function Formacion() {
         </div>
   
         <div className="d-flex mt-5">
-          <a className="mx-auto mb-5" href="cv_Front_end.pdf">
+          <a className="mx-auto mb-5" href="/public/cv_Front_end.pdf" target="_blank">
             <button className="download-button">
               <div className="docs">
                 <svg
@@ -156,7 +169,7 @@ export default function Formacion() {
               <h3 className="mb-3 mt-5">Habilidades</h3>
               <img
                 className="skills mt-5 mb-5 mx-auto"
-                src="./images/skills1.webp"
+                src="/src/images/skills1.webp"
                 alt="skills"
               />
             </div>

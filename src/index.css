@@ -436,3 +436,7 @@ footer{
   .link-proyecto:hover{
     color: #242a35;
   }
+
+  .accordion-body ul {
+    text-align: left;
+  }
