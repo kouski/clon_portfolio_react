@@ -21,7 +21,7 @@ export default function Proyectos() {
     },
     {
       titulo: "Web Fundación SYEI",
-      descripcion: "Desarrollo y diseño de web para la Fundación SYEI, utilizando Wordpress con Elementor. Mantenimiento y actualización anual",
+      descripcion: "Desarrollo y diseño de web para la Fundación SYEI, utilizando Wordpress con Elementor. Mantenimiento y actualizaciones",
       imagen: "/src/images/fundacion.png",
       enlace: "https://www.saludyeducacionintegrales.org/",
       categoria: "WordPress",
@@ -103,7 +103,7 @@ export default function Proyectos() {
 
         {/* Botones de filtro */}
         <div className="mb-4 text-center">
-          {["Todos", "React-Angular", "WordPress", "UX","Vanilla JavaScript"].map(categoria => (
+          {["Todos", "React-Angular","Vanilla JavaScript" ,"WordPress", "UX"].map(categoria => (
             <button
               key={categoria}
               className={`btn btn-outline-danger m-2 ${categoriaSeleccionada === categoria ? 'active' : ''}`}
