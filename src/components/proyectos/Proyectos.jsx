@@ -27,6 +27,13 @@ export default function Proyectos() {
       categoria: "WordPress",
     },
     {
+      titulo: "Aplicación notas",
+      descripcion: "Aplicación clon de Keeper, usando React y Vite",
+      imagen: "/src/images/App-notas.png",
+      enlace: "https://aplicacion-notas-react.netlify.app/",
+      categoria: "React-Angular",
+    },
+    {
       titulo: "Web de diseño y desarrollo web",
       descripcion: "Desarrollo y diseño de página web para Empresa de desarrollo y diseño web, usando Wordpress y Elementor pro.",
       imagen: "/src/images/Gamarraweb.png",
@@ -38,6 +45,13 @@ export default function Proyectos() {
       descripcion: "Desarrollo y diseño de aplicación para seguimiento de pacientes de clínica veterinaria, usando React y Vite, y en css Bootstrap5",
       imagen: "/src/images/veterinaria.webp",
       enlace: "https://veterinariareact71.netlify.app/",
+      categoria: "React-Angular",
+    },
+    {
+      titulo: "Tienda Guitarra",
+      descripcion: "Web venta de guitarras, usando React y Vite.",
+      imagen: "/src/images/guitars.png",
+      enlace: "https://tienda-cart-react.netlify.app/",
       categoria: "React-Angular",
     },
     {
