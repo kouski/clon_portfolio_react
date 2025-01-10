@@ -99,6 +99,11 @@ p{
 
 /* Navbar */
 
+.navbar {
+  padding-right: 5em;
+  padding-left: 5em;
+}
+
 .navbar-brand {
     display: flex;
     justify-content: center;
