@@ -1,3 +1,5 @@
+import logo from '../../images/Component_1.png'
+
 export default function Navbar() {
     return (
       <>
@@ -17,7 +19,7 @@ export default function Navbar() {
             <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
               <a className="navbar-brand" href="#">
                 <img
-                  src="/src/images/Component 1.png"
+                  src={logo}
                   className="mt-5"
                   alt="Logo personal"
                 />
