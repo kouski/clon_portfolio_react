@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 
+
 export default function Formacion() {
 
     useEffect(() => {
@@ -169,7 +170,7 @@ export default function Formacion() {
               <h3 className="mb-3 mt-5">Habilidades</h3>
               <img
                 className="skills mt-5 mb-5 mx-auto"
-                src="/src/images/skills1.webp"
+                src="/images/skills1.webp"
                 alt="skills"
               />
             </div>

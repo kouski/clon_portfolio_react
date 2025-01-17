@@ -5,7 +5,7 @@ export default function Hero() {
     <>
     <div className="container-fluid">
     <div className="card-hero bg-dark text-white border border-white animate__animated animate__zoomInDown">
-      <img src="/src/images/ux-ui-design.webp" className="card-img img-fluid" alt="fondo con mujer de mano diseñando" style={{height: '400px'}}/>
+      <img src="/images/ux-ui-design.webp" className="card-img img-fluid" alt="fondo con mujer de mano diseñando" style={{height: '400px'}}/>
     </div>
   </div>
 

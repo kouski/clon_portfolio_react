@@ -1,4 +1,4 @@
-import logo from '../../images/Component_1.png'
+
 
 export default function Navbar() {
     return (
@@ -19,7 +19,7 @@ export default function Navbar() {
             <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
               <a className="navbar-brand" href="#">
                 <img
-                  src={logo}
+                  src="/images/Component_1.png"
                   className="mt-5"
                   alt="Logo personal"
                 />
