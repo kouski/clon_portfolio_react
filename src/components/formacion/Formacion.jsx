@@ -119,7 +119,7 @@ export default function Formacion() {
         </div>
   
         <div className="d-flex mt-5">
-          <a className="mx-auto mb-5" href="/public/cv_Front_end.pdf" target="_blank">
+          <a className="mx-auto mb-5" href="/cv_Front_end.pdf" target="_blank">
             <button className="download-button">
               <div className="docs">
                 <svg
