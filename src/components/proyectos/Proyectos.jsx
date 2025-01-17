@@ -28,6 +28,13 @@ export default function Proyectos() {
       categoria: "WordPress",
     },
     {
+      titulo: "Web Fitoterapia Clínica",
+      descripcion: "Desarrollo y diseño de web para cliente de fitoterapia, utilizando Wordpress con Elementor. Mantenimiento y actualizaciones",
+      imagen: "/images/fitoterapia.png",
+      enlace: "https://fitoterapiaclinica.com/",
+      categoria: "WordPress",
+    },
+    {
       titulo: "Aplicación notas",
       descripcion: "Aplicación clon de Keeper, usando React y Vite",
       imagen: "/images/App-notas.png",
