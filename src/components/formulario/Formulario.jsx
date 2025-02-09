@@ -17,7 +17,7 @@ export default function Formulario() {
         <input type="text" className="form-control" id="form-group-input-name" name="name" placeholder="Nombre y Apellidos" required />
       </div>
       <div className="form-group col-lg-4">
-        <label className="form-control-label" htmlForr="form-group-input-email">Email</label>
+        <label className="form-control-label" htmlFor="form-group-input-email">Email</label>
         <input type="email" className="form-control" id="form-group-input-email" name="email" placeholder="xxxx@xxx.xx" required />
       </div>
       <div className="form-group col-lg-12">

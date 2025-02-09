@@ -43,7 +43,7 @@ export default function Formacion() {
                     <div className="accordion-body" style={{ fontSize: '1.25rem' }}>
                       <ul>
                         <li>Licenciado en Derecho</li>
-                        <li>Master en Calidad de los Servicios y satisfacción de clientes.(900h)</li>
+                        <li>Master en Calidad de los Servicios y Satisfacción de clientes.(900h)</li>
                         <li>Bootcamp Front-end. Las Rozas Innova.(307h)</li>
                       </ul>
                     </div>
