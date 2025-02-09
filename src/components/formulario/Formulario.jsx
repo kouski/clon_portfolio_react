@@ -13,15 +13,15 @@ export default function Formulario() {
   <div className="card-body p-4">
     <form name="formulario-contacto" className="row" data-netlify="true">
       <div className="form-group col-lg-4">
-        <label className="form-control-label" for="form-group-input-name">Nombre</label>
+        <label className="form-control-label" htmlFor="form-group-input-name">Nombre</label>
         <input type="text" className="form-control" id="form-group-input-name" name="name" placeholder="Nombre y Apellidos" required />
       </div>
       <div className="form-group col-lg-4">
-        <label className="form-control-label" for="form-group-input-email">Email</label>
+        <label className="form-control-label" htmlForr="form-group-input-email">Email</label>
         <input type="email" className="form-control" id="form-group-input-email" name="email" placeholder="xxxx@xxx.xx" required />
       </div>
       <div className="form-group col-lg-12">
-        <label className="form-control-label" for="form-group-input">Comentarios</label>
+        <label className="form-control-label" htmlFor="form-group-input">Comentarios</label>
         <textarea className="form-control" id="form-group-input" name="notes" rows="6" placeholder="Incluir comentario..." required></textarea>
       </div>
       <div className="form-group col-lg-12">
