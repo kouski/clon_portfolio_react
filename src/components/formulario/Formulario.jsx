@@ -11,7 +11,7 @@ export default function Formulario() {
     <h2 id="contacto" className="mb-2">Contacto</h2>
   </div>
   <div className="card-body p-4">
-    <form name="formulario-contacto" className="row" netlify>
+    <form name="formulario-contacto" className="row" data-netlify="true">
       <div className="form-group col-lg-4">
         <label className="form-control-label" for="form-group-input-name">Nombre</label>
         <input type="text" className="form-control" id="form-group-input-name" name="name" placeholder="Nombre y Apellidos" required />
